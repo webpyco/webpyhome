@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://webpy.co/sitemap.xml
