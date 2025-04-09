@@ -3,43 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Webpy - Sitios web con inteligencia artificial</title>
-  <meta name="description" content="Webpy crea sitios web optimizados con inteligencia artificial para negocios modernos. Descubre nuestro catálogo o conoce más sobre nosotros.">
+  <title>Webpy - Crea tu sitio web con IA</title>
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Webpy crea sitios web con inteligencia artificial para negocios modernos. Descubre nuestro catálogo o conoce más sobre nosotros.">
+  <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://webpy.co" />
+  <link rel="alternate" hreflang="es" href="https://webpy.co" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Webpy - Crea tu sitio web con IA" />
+  <meta property="og:description" content="Impulsa tu presencia digital con sitios web rápidos y modernos." />
+  <meta property="og:url" content="https://webpy.co" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:image" content="https://webpy.co/og-image.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Webpy",
+    "url": "https://webpy.co",
+    "logo": "https://webpy.co/logo.png",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+57-319-536-3294",
+      "contactType": "customer service"
+    },
+    "sameAs": [
+      "https://api.whatsapp.com/send?phone=573195363294"
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, main, footer {
+      padding: 1rem 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <header>
-    <h1>Webpy - Creamos tu sitio web con IA</h1>
+    <h1>Webpy - Sitios Web con Inteligencia Artificial</h1>
     <nav>
       <ul>
         <li><a href="/about">Sobre Webpy</a></li>
-        <li><a href="/catalogue">Catálogo de Sitios Web</a></li>
+        <li><a href="/catalogue">Catálogo</a></li>
         <li><a href="https://api.whatsapp.com/send?phone=573195363294" target="_blank" rel="noopener">Contáctanos</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Diseño moderno, rápido y personalizado</h2>
-    <p>Impulsa tu presencia online con Webpy. Usamos inteligencia artificial para diseñar y lanzar sitios web profesionales en minutos.</p>
+    <h2>Impulsa tu presencia online</h2>
+    <p>Con Webpy, obtén un sitio web moderno, rápido y personalizado usando inteligencia artificial.</p>
 
     <section>
-      <h2>Navega nuestro sitio</h2>
+      <h2>Explora nuestro contenido</h2>
       <ul>
-        <li><a href="/about">¿Quiénes somos?</a> Conoce nuestra historia y visión.</li>
-        <li><a href="/catalogue">Explora el catálogo</a> de sitios listos para publicar.</li>
+        <li><a href="/about">Conoce quiénes somos</a></li>
+        <li><a href="/catalogue">Revisa el catálogo de sitios</a></li>
         <li><a href="https://api.whatsapp.com/send?phone=573195363294" target="_blank" rel="noopener">Chatea con nosotros por WhatsApp</a></li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Webpy. Todos los derechos reservados.</p>
+    <p>© 2025 Webpy Co. Todos los derechos reservados.</p>
     <nav>
-      <a href="/about">Sobre Webpy</a> | 
-      <a href="/catalogue">Catálogo</a> | 
+      <a href="/about">Sobre Webpy</a> |
+      <a href="/catalogue">Catálogo</a> |
       <a href="https://api.whatsapp.com/send?phone=573195363294" target="_blank" rel="noopener">WhatsApp</a>
     </nav>
   </footer>
+
+  <!-- Optional redirect fallback (client-side only) -->
+  <script>
+    // Redirige de www a non-www si el usuario entra por www
+    if (location.hostname.startsWith('www.')) {
+      location.replace(location.href.replace('www.', ''));
+    }
+  </script>
 </body>
 </html>
